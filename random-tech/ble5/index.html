@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>BLE5 :: Life of an engineer</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="In theory, bluetooth uses 2.45GHz and it supports 721KBps of data transfer, along with three voice channels. Standart bluetotth links can connect up to eight devices simultaneously, with each device offering unique 48-bit address based on IEEE 802 standard.
+Bluetooth network consists of personal area network or piconet, 2 to 8 devices. One single, 7 masters. Master initiates communication with other devices and governs the link and data traffic between itself and slaves." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://66mhz.github.io/random-tech/ble5/" />
+
+
+
+
+<link rel="stylesheet" href="https://66mhz.github.io/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://66mhz.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://66mhz.github.io/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="BLE5">
+<meta property="og:description" content="In theory, bluetooth uses 2.45GHz and it supports 721KBps of data transfer, along with three voice channels. Standart bluetotth links can connect up to eight devices simultaneously, with each device offering unique 48-bit address based on IEEE 802 standard.
+Bluetooth network consists of personal area network or piconet, 2 to 8 devices. One single, 7 masters. Master initiates communication with other devices and governs the link and data traffic between itself and slaves." />
+<meta property="og:url" content="https://66mhz.github.io/random-tech/ble5/" />
+<meta property="og:site_name" content="Life of an engineer" />
+
+  
+    <meta property="og:image" content="https://66mhz.github.io/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2022-07-16 20:29:50 -0500 CDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/computer_architecture">Computer Architecture</a></li>
+        
+      
+        
+          <li><a href="/ml-dl">ML-DL</a></li>
+        
+      
+      
+        <ul class="menu__sub-inner">
+          <li class="menu__sub-inner-more-trigger">Show more ▾</li>
+
+          <ul class="menu__sub-inner-more hidden">
+            
+              
+                <li><a href="/random-tech">Random</a></li>
+              
+            
+              
+                <li><a href="/robotics">Robotics</a></li>
+              
+            
+          </ul>
+        </ul>
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/computer_architecture">Computer Architecture</a></li>
+      
+    
+      
+        <li><a href="/ml-dl">ML-DL</a></li>
+      
+    
+      
+        <li><a href="/random-tech">Random</a></li>
+      
+    
+      
+        <li><a href="/robotics">Robotics</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://66mhz.github.io/random-tech/ble5/">BLE5</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-07-16
+        
+      </span>
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>In theory, bluetooth uses 2.45GHz and it supports 721KBps of data transfer, along with three voice channels.
+Standart bluetotth links can connect up to <strong>eight devices</strong> simultaneously, with each device offering unique <em>48-bit</em> address based on IEEE 802 standard.</p>
+<p>Bluetooth network consists of personal area network or piconet, 2 to 8 devices. One single, 7 masters.
+Master initiates communication with other devices and governs the link and data traffic between itself and slaves.</p>
+<p>In 1998, the technology companies Ericsson, IBM, Nokia, and Toshiba formed the Bluetooth Special Interest Group (SIG), which published the first version of the platform in 1999.<br>
+This first version could achieve a data transfer rate of <strong>1Mbps</strong>.<br>
+Version 2.0+EDR had a data speed of 3Mbps, while version 3.0+HS stepped up its speed of data transfer to <strong>24 Mbps</strong>.</p>
+<h2 id="versions-1-to-3-then-ble">Versions 1 to 3, then BLE<a href="#versions-1-to-3-then-ble" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Versions 1 to 3 of the platform operated via Bluetooth radio, which consumes a large amount of energy in its work.<br>
+<strong>Bluetooth Low Energy</strong> technology or BLE was originally created to reduce the power consumption of Bluetooth peripherals.<br>
+It was introduced for Bluetooth 4.0 and continued to improve through the BLE4 series, whose last version was 4.2.</p>
+<p>Design and performance-wise, BLE5 has the edge over BLE4, in a number of different aspects.</p>
+<ol>
+<li>Speed
+<ol>
+<li>BLE5 achieves a data transfer speed of <strong>48MBps</strong>. This is twice that of BLE4. Bluetooth 5.0 has a bandwidth of 5Mbps, which is more than two times that of Bluetooth 4.2, whose maximum bandwidth is 2.1 Mbps. This effectively increases the data rate of BLE5 to 2Mbps, which allows it to reach a net data rate of about 1.4Mbps, if you ignore overheads like addressing. While this isn’t fast enough to stream video, it does permit audio streaming.</li>
+</ol>
+</li>
+<li>Range
+<ol>
+<li>Range of BLE5 is up to four times that of Bluetooth 4.2. A BLE4 solution can reach a maximum range of about 50m, so with Bluetooth 5.0 something in the vicinity of 200m is possible — though some researchers suggest that BLE5 can be connected up to 300 metres or 985 feet. These figures are for outdoor connections. <strong>Indoors, Bluetooth 5 actively operates within a radius of 40 metres.</strong> Compare this with the 10m indoor radius of BLE4, and it’s clear that BLE5 has the advantage when it comes to using wireless headphones some distance away from your phone, for example, or for connecting devices throughout a house, as opposed to within a single room.</li>
+</ol>
+</li>
+<li>Broadcast Capability
+<ol>
+<li>Bluetooth 5 supports data packets eight times bigger than the previous version, with a message capacity of about 255 bytes (BLE4 has a message capacity about 31 bytes). This gives BLE5 considerably more space for its actual data load, and with more data bits in each packet, the net data throughput is also increased. Largely because of the increased range, speed, and message capacity of BLE5, Bluetooth 5 Beacon has been growing in popularity.</li>
+</ol>
+</li>
+<li>Compatibility
+<ol>
+<li>In terms of compatibility, BLE4 works best with devices compatible with version 4 of the series, but will not work with devices that are using Bluetooth 5. BLE5 is backwards compatible with all versions of Bluetooth up to version 4.2 — but with the limitation that not all Bluetooth 5 features may be available on these devices.</li>
+</ol>
+</li>
+<li>Power Consumption
+<ol>
+<li>While both BLE5 and BLE4 are part of the Bluetooth Low Energy ecosystem, BLE5 has been designed to consume less power than its predecessor. So Bluetooth 5 devices can be left running for longer periods, without putting too much stress on their batteries. Historically, this has been a particular problem with smart watches and devices with smaller form factors, like IoT sensors. With the redesigned power consumption system in Bluetooth 5, most such devices will increase their battery life.</li>
+</ol>
+</li>
+<li>Resiliency
+<ol>
+<li>BLE5 was developed with the consideration that important processes involving Bluetooth most often occur in an overloaded environment, which negatively affects its operation. Compared to Bluetooth 4.2, BLE5 works much more reliably in overloaded environments.</li>
+</ol>
+</li>
+<li>Security
+<ol>
+<li>In April 2017, security researchers discovered several exploits in Bluetooth software (collectively called “BlueBorne”) affecting various platforms, including Microsoft Windows, Linux, Apple iOS, and Google’s Android. Some of these exploits could permit an attacker to connect to devices or systems without authentication, and to effectively hijack a complete device. BLE5 has addressed much of this vulnerability, with bit-level security, and authentication controls using a 128bit key.</li>
+</ol>
+</li>
+</ol>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>66mhz</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://66mhz.github.io/assets/main.js"></script>
+<script src="https://66mhz.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

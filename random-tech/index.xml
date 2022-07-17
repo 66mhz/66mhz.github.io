@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Life of an engineer</title>
-    <link>https://66mhz.github.io/</link>
-    <description>Recent content on Life of an engineer</description>
+    <title>Random Teches on Life of an engineer</title>
+    <link>https://66mhz.github.io/random-tech/</link>
+    <description>Recent content in Random Teches on Life of an engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>66mhz</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 20:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 20:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/random-tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BLE5</title>
       <link>https://66mhz.github.io/random-tech/ble5/</link>
@@ -65,96 +65,6 @@ It was introduced for Bluetooth 4.0 and continued to improve through the BLE4 se
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Memory Formats for Deep Learning</title>
-      <link>https://66mhz.github.io/ml-dl/memory_formats_dl/</link>
-      <pubDate>Sat, 16 Jul 2022 20:29:50 -0500</pubDate>
-      
-      <guid>https://66mhz.github.io/ml-dl/memory_formats_dl/</guid>
-      <description>Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about. For activation, we care about:
-N: Batch C: Channel D: Depth H: Height W: Weight For weights, we care about: G: Groups O: Output channel I: Input channel D: Depth H: Height W: Weight
-Why do we care?
-It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?</description>
-      <content>&lt;h1 id=&#34;memory-formats-for-deep-learning&#34;&gt;Memory Formats for Deep Learning&lt;/h1&gt;
-&lt;p&gt;In deep learning, there are certain memory formats we care about.
-For activation, we care about:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;N: Batch&lt;/li&gt;
-&lt;li&gt;C: Channel&lt;/li&gt;
-&lt;li&gt;D: Depth&lt;/li&gt;
-&lt;li&gt;H: Height&lt;/li&gt;
-&lt;li&gt;W: Weight&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For weights, we care about:
-G: Groups
-O: Output channel
-I: Input channel
-D: Depth
-H: Height
-W: Weight&lt;/p&gt;
-&lt;p&gt;Why do we care?&lt;/p&gt;
-&lt;p&gt;It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like? Most of the time you need to know these basics.&lt;/p&gt;
-&lt;p&gt;References:
-&lt;a href=&#34;https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html&#34;&gt;https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html&lt;/a&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>PHORHUM</title>
-      <link>https://66mhz.github.io/ml-dl/phorhum/</link>
-      <pubDate>Sat, 16 Jul 2022 20:29:50 -0500</pubDate>
-      
-      <guid>https://66mhz.github.io/ml-dl/phorhum/</guid>
-      <description>A new work from Google Research, published here.
-Photorealistic Monocular 3D Reconstruction of Humans Wearing Clothing. Where is the model? Where is the dataset? We would like to try Google!
-If you happen to know the source code or dataset for this work, please share :)
-In essence, a DL network that performs photorealistic 3D person reconstruction from a single RGB image.
-It can reconstruct full 3D geometry, meaning, even the unseen regions.</description>
-      <content>&lt;p&gt;A new work from Google Research, published &lt;a href=&#34;https://phorhum.github.io/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Photorealistic Monocular 3D Reconstruction of Humans Wearing Clothing.&lt;/strong&gt;
-&lt;em&gt;Where is the model? Where is the dataset? We would like to try Google!&lt;/em&gt;&lt;br&gt;
-If you happen to know the source code or dataset for this work, please share :)&lt;/p&gt;
-&lt;p&gt;In essence, a DL network that performs photorealistic 3D person reconstruction from a single RGB image.&lt;br&gt;
-It can reconstruct full 3D geometry, meaning, even the unseen regions. This is the interesting part of the work.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://66mhz.github.io/phorhum_pic.gif&#34; alt=&#34;Scenario 1: Across columns&#34;&gt;&lt;/p&gt;
-&lt;p&gt;“Rigging” is the term for finding the joints or points for animation.&lt;br&gt;
-That reminds me, there is an interesting paper/work for constructing rigs from a given 3D input. It is called &lt;a href=&#34;https://arxiv.org/pdf/2005.00559.pdf&#34;&gt;RigNet&lt;/a&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://66mhz.github.io/about/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://66mhz.github.io/about/about/</guid>
-      <description>this is a test for about page. </description>
-      <content>&lt;h2 id=&#34;this-is-a-test-for-about-page&#34;&gt;this is a test for about page.&lt;/h2&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://66mhz.github.io/computer_architecture/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://66mhz.github.io/computer_architecture/about/</guid>
-      <description>this is a test for comp arch </description>
-      <content>&lt;h2 id=&#34;this-is-a-test-for-comp-arch&#34;&gt;this is a test for comp arch&lt;/h2&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://66mhz.github.io/ml-dl/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://66mhz.github.io/ml-dl/about/</guid>
-      <description>this is a test for ml-dl </description>
-      <content>&lt;h2 id=&#34;this-is-a-test-for-ml-dl&#34;&gt;this is a test for ml-dl&lt;/h2&gt;
 </content>
     </item>
     

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: /Users/cagri/Documents/66mhz.github.io/lifeofanengineer/public/sitemap.xml

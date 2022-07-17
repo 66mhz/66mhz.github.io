@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about.For activation, we care about:
+N: BatchC: ChannelD: DepthH: HeightW: Weight
+For weights, we care about:
+G: GroupsO: Output channelI: Input channelD: DepthH: HeightW: Weight
+Why do we care?
+It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://66mhz.github.io/posts/ml-dl/memory_formats_dl/" />
+
+
+
+
+<link rel="stylesheet" href="https://66mhz.github.io/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://66mhz.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://66mhz.github.io/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about.For activation, we care about:
+N: BatchC: ChannelD: DepthH: HeightW: Weight
+For weights, we care about:
+G: GroupsO: Output channelI: Input channelD: DepthH: HeightW: Weight
+Why do we care?
+It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?" />
+<meta property="og:url" content="https://66mhz.github.io/posts/ml-dl/memory_formats_dl/" />
+<meta property="og:site_name" content="Terminal" />
+
+  
+    <meta property="og:image" content="https://66mhz.github.io/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://66mhz.github.io/posts/ml-dl/memory_formats_dl/"></a></h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="memory-formats-for-deep-learning">Memory Formats for Deep Learning<a href="#memory-formats-for-deep-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>In deep learning, there are certain memory formats we care about.For activation, we care about:</p>
+<p>N: BatchC: ChannelD: DepthH: HeightW: Weight</p>
+<p>For weights, we care about:</p>
+<p>G: GroupsO: Output channelI: Input channelD: DepthH: HeightW: Weight</p>
+<p>Why do we care?</p>
+<p>It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like? Most of the time you need to know these basics.</p>
+<p>References:</p>
+<p><a href="https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html">https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html</a></p>
+
+      </div></div>
+
+  
+  
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://66mhz.github.io/assets/main.js"></script>
+<script src="https://66mhz.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
