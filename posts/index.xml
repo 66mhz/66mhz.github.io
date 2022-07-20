@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Terminal</title>
+    <title>Posts on Life of an engineer</title>
     <link>https://66mhz.github.io/posts/</link>
-    <description>Recent content in Posts on Terminal</description>
+    <description>Recent content in Posts on Life of an engineer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://66mhz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>66mhz</copyright>
+    <lastBuildDate>Sat, 16 Jul 2022 20:59:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://66mhz.github.io/posts/ml-dl/memory_formats_dl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>MAIN</title>
+      <link>https://66mhz.github.io/posts/main/</link>
+      <pubDate>Sat, 16 Jul 2022 20:59:50 -0500</pubDate>
       
-      <guid>https://66mhz.github.io/posts/ml-dl/memory_formats_dl/</guid>
-      <description>Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about.For activation, we care about:
-N: BatchC: ChannelD: DepthH: HeightW: Weight
-For weights, we care about:
-G: GroupsO: Output channelI: Input channelD: DepthH: HeightW: Weight
-Why do we care?
-It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?</description>
-      <content>&lt;h1 id=&#34;memory-formats-for-deep-learning&#34;&gt;Memory Formats for Deep Learning&lt;/h1&gt;
-&lt;p&gt;In deep learning, there are certain memory formats we care about.For activation, we care about:&lt;/p&gt;
-&lt;p&gt;N: BatchC: ChannelD: DepthH: HeightW: Weight&lt;/p&gt;
-&lt;p&gt;For weights, we care about:&lt;/p&gt;
-&lt;p&gt;G: GroupsO: Output channelI: Input channelD: DepthH: HeightW: Weight&lt;/p&gt;
-&lt;p&gt;Why do we care?&lt;/p&gt;
-&lt;p&gt;It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like? Most of the time you need to know these basics.&lt;/p&gt;
-&lt;p&gt;References:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html&#34;&gt;https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html&lt;/a&gt;&lt;/p&gt;
+      <guid>https://66mhz.github.io/posts/main/</guid>
+      <description>Select a topic from the navigation bar :)</description>
+      <content>&lt;p&gt;Select a topic from the navigation bar :)&lt;/p&gt;
 </content>
     </item>
     

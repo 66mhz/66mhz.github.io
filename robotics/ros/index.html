@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Ros :: Life of an engineer</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Robot Operating System / ROS Their docs has everything you need to refer, so we will just discuss ROS a bit here.
+It is one of the core knowledge and it is fundamental that there is a significant effort around it, one of the latest development, IMO, is AccelerationRobotics. I quote their webpage:
+ROBOTCORE™ helps build custom compute architectures for robots, or robot cores, that make robots faster, more deterministic and power-efficient." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://66mhz.github.io/robotics/ros/" />
+
+
+
+
+<link rel="stylesheet" href="https://66mhz.github.io/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://66mhz.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://66mhz.github.io/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ros">
+<meta property="og:description" content="Robot Operating System / ROS Their docs has everything you need to refer, so we will just discuss ROS a bit here.
+It is one of the core knowledge and it is fundamental that there is a significant effort around it, one of the latest development, IMO, is AccelerationRobotics. I quote their webpage:
+ROBOTCORE™ helps build custom compute architectures for robots, or robot cores, that make robots faster, more deterministic and power-efficient." />
+<meta property="og:url" content="https://66mhz.github.io/robotics/ros/" />
+<meta property="og:site_name" content="Life of an engineer" />
+
+  
+    <meta property="og:image" content="https://66mhz.github.io/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2022-07-16 23:23:15 -0500 CDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/computer_architecture">Computer Architecture</a></li>
+        
+      
+        
+          <li><a href="/ml-dl">ML-DL</a></li>
+        
+      
+        
+          <li><a href="/random-tech">Random</a></li>
+        
+      
+        
+          <li><a href="/robotics">Robotics</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/computer_architecture">Computer Architecture</a></li>
+      
+    
+      
+        <li><a href="/ml-dl">ML-DL</a></li>
+      
+    
+      
+        <li><a href="/random-tech">Random</a></li>
+      
+    
+      
+        <li><a href="/robotics">Robotics</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://66mhz.github.io/robotics/ros/">Ros</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-07-16
+        
+      </span>
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="robot-operating-system--ros">Robot Operating System / ROS<a href="#robot-operating-system--ros" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Their <a href="https://docs.ros.org/">docs</a> has everything you need to refer, so we will just discuss ROS a bit here.<br>
+It is one of the core knowledge and it is fundamental that there is a significant effort around it, one of the latest development, IMO, is <a href="https://accelerationrobotics.com/robotcore.php#benchmarks">AccelerationRobotics</a>. I quote their webpage:</p>
+<blockquote>
+<p>ROBOTCORE™ helps build custom compute architectures for robots, or robot cores, that make robots faster, more deterministic and power-efficient. Simply put, it provides a development, build and deployment experience for creating robot hardware and hardware accelerators similar to the standard, non-accelerated ROS development flow.</p>
+</blockquote>
+<p>Here is <a href="https://arxiv.org/abs/2205.03929">RobotCore paper</a> for reference.</p>
+<h1 id="using-unity-with-ros">Using Unity with ROS<a href="#using-unity-with-ros" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<ul>
+<li>
+<p><a href="https://github.com/Unity-Technologies/ROS-TCP-Endpoint">ROS TCP Endpoint</a><br>
+<em>ROS package used to create an endpoint to accept ROS messages sent from a Unity scene using the ROS TCP Connector scripts</em>\</p>
+</li>
+<li>
+<p><strong>Related:</strong><a href="https://github.com/Unity-Technologies/ROS-TCP-Connector">ROS TCP Connector</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Unity-Technologies/Unity-Robotics-Hub">Robotics simulation using Unity</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Unity-Technologies/com.unity.perception">Unity perception package</a><br>
+<em>The Perception package provides a toolkit for generating large-scale datasets for computer vision training and validation. It is focused on a handful of camera-based use cases for now and will ultimately expand to other forms of sensors and machine learning tasks.</em></p>
+</li>
+</ul>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>66mhz</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://66mhz.github.io/assets/main.js"></script>
+<script src="https://66mhz.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

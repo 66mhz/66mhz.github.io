@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   
-    <title>Random Teches :: Life of an engineer</title>
+    <title>Robotics :: Life of an engineer</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://66mhz.github.io/random-tech/" />
+<link rel="canonical" href="https://66mhz.github.io/robotics/" />
 
 
 
@@ -38,9 +38,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Random Teches">
+<meta property="og:title" content="Robotics">
 <meta property="og:description" content="" />
-<meta property="og:url" content="https://66mhz.github.io/random-tech/" />
+<meta property="og:url" content="https://66mhz.github.io/robotics/" />
 <meta property="og:site_name" content="Life of an engineer" />
 
   
@@ -54,7 +54,7 @@
 
 
 
-  <link href="/random-tech/index.xml" rel="alternate" type="application/rss+xml" title="Life of an engineer" />
+  <link href="/robotics/index.xml" rel="alternate" type="application/rss+xml" title="Life of an engineer" />
 
 
 
@@ -144,7 +144,7 @@
     
       <div class="post on-list">
         <h1 class="post-title">
-          <a href="https://66mhz.github.io/random-tech/system_design/">System Design</a>
+          <a href="https://66mhz.github.io/robotics/ros/">Ros</a>
         </h1>
         <div class="post-meta">
           <span class="post-date">
@@ -161,21 +161,23 @@
       
         <div class="post-content">
           
-            System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills. It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made. Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters. It is not to memorize solutions. It is about how to solve problems.
+            Robot Operating System / ROS Their docs has everything you need to refer, so we will just discuss ROS a bit here.
+It is one of the core knowledge and it is fundamental that there is a significant effort around it, one of the latest development, IMO, is AccelerationRobotics. I quote their webpage:
+ROBOTCORE™ helps build custom compute architectures for robots, or robot cores, that make robots faster, more deterministic and power-efficient.
           
         </div>
 
         
         <div>
           <a class="read-more button"
-            href="/random-tech/system_design/">Read more →</a>
+            href="/robotics/ros/">Read more →</a>
         </div>
         
       </div>
     
       <div class="post on-list">
         <h1 class="post-title">
-          <a href="https://66mhz.github.io/random-tech/ble5/">BLE5</a>
+          <a href="https://66mhz.github.io/robotics/fake-real_self_awareness/">Fake Real_Self_Awareness</a>
         </h1>
         <div class="post-meta">
           <span class="post-date">
@@ -192,15 +194,84 @@
       
         <div class="post-content">
           
-            In theory, bluetooth uses 2.45GHz and it supports 721KBps of data transfer, along with three voice channels. Standart bluetotth links can connect up to eight devices simultaneously, with each device offering unique 48-bit address based on IEEE 802 standard.
-Bluetooth network consists of personal area network or piconet, 2 to 8 devices. One single, 7 masters. Master initiates communication with other devices and governs the link and data traffic between itself and slaves.
+            
           
         </div>
 
         
         <div>
           <a class="read-more button"
-            href="/random-tech/ble5/">Read more →</a>
+            href="/robotics/fake-real_self_awareness/">Read more →</a>
+        </div>
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="https://66mhz.github.io/robotics/agriculture_robotics/">Agriculture and Robotics</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2022-07-16
+          </span>
+          
+        </div>
+
+        
+
+        
+
+
+      
+        <div class="post-content">
+          
+            Survey TerraSentia (<a href="https://www.nytimes.com/2020/02/13/science/farm-agriculture-robots.html">https://www.nytimes.com/2020/02/13/science/farm-agriculture-robots.html</a>) Functions Measure plant height Stem diameter Leaf-area index Stand count (num of live grain or fruit producing plants) Dr.Chowdhary is working on this, and with its company EarthSense, which produces these robots.
+In addition to plant height, TerraSentia can measure stem diameter, leaf-area index and “stand count” — the number of live grain- or fruit-producing plants — or all of those traits at once. And Dr. Chowdhary is working on adding even more traits, or phenotypes, to the list with the help of colleagues at EarthSense, a spinoff company that he created to manufacture more robots.
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/robotics/agriculture_robotics/">Read more →</a>
+        </div>
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="https://66mhz.github.io/robotics/raspberrycam/">RaspberryPi Camera v2</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2022-07-16
+          </span>
+          
+        </div>
+
+        
+
+        
+
+
+      
+        <div class="post-content">
+          
+            Raspberry camera version 2.1 Sony IMX219 8-megapixel sensor Sensor: /base/soc/i2c0mux/i2c@1/imx219@10 It can be accessed through the MMAL and V4L APIs. If raspistill command does not work, check libcamera.
+To install v4l2-rtspserver, simply use the following command:
+sudo snap install v4l2-rtspserver
+To check the status of uv4l on raspbian:
+sudo service uv4l_raspicam status
+To start a stream:
+uv4l &ndash;driver raspicam &ndash;auto-video_nr &ndash;encoding h264 &ndash;width 640 &ndash;height 480 &ndash;enable-server on
+To find supported video capture formats:
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/robotics/raspberrycam/">Read more →</a>
         </div>
         
       </div>

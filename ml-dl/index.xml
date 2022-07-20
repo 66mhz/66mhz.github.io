@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>66mhz</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 20:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/ml-dl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 23:18:54 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/ml-dl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ROCm</title>
+      <link>https://66mhz.github.io/ml-dl/rocm/</link>
+      <pubDate>Sat, 16 Jul 2022 23:18:54 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/ml-dl/rocm/</guid>
+      <description>For anyone using ROCm for machine learnig / deep learning, these docker run commands will be useful:
+For Pytorch:
+sudo docker run -it --name rocm_torch --network=host --device=/dev/kfd --device=/dev/dri --group-add=video --ipc=host --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v ~/things/:/atdocker -v /mnt/1tb:/1tb rocm/pytorch
+Note rocm/pytorch is the latest release, check docker hub for different ubuntu versions and so on.
+ROCm with Tensorflow has the similar idea, just use rocm/tensorflow.</description>
+      <content>&lt;p&gt;For anyone using ROCm for machine learnig / deep learning, these &lt;code&gt;docker run&lt;/code&gt; commands will be useful:&lt;br&gt;
+For &lt;strong&gt;Pytorch&lt;/strong&gt;:&lt;br&gt;
+&lt;code&gt;sudo docker run -it --name rocm_torch --network=host --device=/dev/kfd --device=/dev/dri --group-add=video --ipc=host --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v ~/things/:/atdocker -v /mnt/1tb:/1tb rocm/pytorch&lt;/code&gt;&lt;br&gt;
+Note &lt;code&gt;rocm/pytorch&lt;/code&gt; is the latest release, check &lt;a href=&#34;https://hub.docker.com/r/rocm/pytorch&#34;&gt;docker hub&lt;/a&gt; for different ubuntu versions and so on.&lt;/p&gt;
+&lt;p&gt;ROCm with Tensorflow has the similar idea, just use &lt;code&gt;rocm/tensorflow&lt;/code&gt;.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Memory Formats for Deep Learning</title>
       <link>https://66mhz.github.io/ml-dl/memory_formats_dl/</link>
@@ -62,17 +81,6 @@ It can reconstruct full 3D geometry, meaning, even the unseen regions. This is t
 &lt;p&gt;&lt;img src=&#34;https://66mhz.github.io/phorhum_pic.gif&#34; alt=&#34;Scenario 1: Across columns&#34;&gt;&lt;/p&gt;
 &lt;p&gt;“Rigging” is the term for finding the joints or points for animation.&lt;br&gt;
 That reminds me, there is an interesting paper/work for constructing rigs from a given 3D input. It is called &lt;a href=&#34;https://arxiv.org/pdf/2005.00559.pdf&#34;&gt;RigNet&lt;/a&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://66mhz.github.io/ml-dl/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://66mhz.github.io/ml-dl/about/</guid>
-      <description>this is a test for ml-dl </description>
-      <content>&lt;h2 id=&#34;this-is-a-test-for-ml-dl&#34;&gt;this is a test for ml-dl&lt;/h2&gt;
 </content>
     </item>
     

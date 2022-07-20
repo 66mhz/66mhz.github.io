@@ -2,29 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://66mhz.github.io/random-tech/ble5/</loc>
-    <lastmod>2022-07-16T20:29:50-05:00</lastmod>
-  </url><url>
     <loc>https://66mhz.github.io/</loc>
+    <lastmod>2022-07-16T23:23:15-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/robotics/</loc>
+    <lastmod>2022-07-16T23:23:15-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/robotics/ros/</loc>
+    <lastmod>2022-07-16T23:23:15-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/ml-dl/</loc>
+    <lastmod>2022-07-16T23:18:54-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/ml-dl/rocm/</loc>
+    <lastmod>2022-07-16T23:18:54-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/robotics/fake-real_self_awareness/</loc>
+    <lastmod>2022-07-16T23:15:47-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/robotics/agriculture_robotics/</loc>
+    <lastmod>2022-07-16T22:22:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/robotics/raspberrycam/</loc>
+    <lastmod>2022-07-16T22:10:03-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/random-tech/</loc>
+    <lastmod>2022-07-16T21:29:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/random-tech/system_design/</loc>
+    <lastmod>2022-07-16T21:29:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/posts/main/</loc>
+    <lastmod>2022-07-16T20:59:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/posts/</loc>
+    <lastmod>2022-07-16T20:59:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/random-tech/ble5/</loc>
     <lastmod>2022-07-16T20:29:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/ml-dl/memory_formats_dl/</loc>
     <lastmod>2022-07-16T20:29:50-05:00</lastmod>
   </url><url>
-    <loc>https://66mhz.github.io/ml-dl/</loc>
-    <lastmod>2022-07-16T20:29:50-05:00</lastmod>
-  </url><url>
     <loc>https://66mhz.github.io/ml-dl/phorhum/</loc>
-    <lastmod>2022-07-16T20:29:50-05:00</lastmod>
-  </url><url>
-    <loc>https://66mhz.github.io/random-tech/</loc>
     <lastmod>2022-07-16T20:29:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/about/about/</loc>
   </url><url>
     <loc>https://66mhz.github.io/computer_architecture/about/</loc>
-  </url><url>
-    <loc>https://66mhz.github.io/ml-dl/about/</loc>
   </url><url>
     <loc>https://66mhz.github.io/about/</loc>
   </url><url>

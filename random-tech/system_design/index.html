@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
   
-    <title>Memory Formats for Deep Learning :: Life of an engineer</title>
+    <title>System Design :: Life of an engineer</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about. For activation, we care about:
-N: Batch C: Channel D: Depth H: Height W: Weight For weights, we care about: G: Groups O: Output channel I: Input channel D: Depth H: Height W: Weight
-Why do we care?
-It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?" />
+<meta name="description" content="System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills. It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made. Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters. It is not to memorize solutions. It is about how to solve problems." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://66mhz.github.io/ml-dl/memory_formats_dl/" />
+<link rel="canonical" href="https://66mhz.github.io/random-tech/system_design/" />
 
 
 
@@ -41,12 +38,9 @@ It is mostly to optimize your HW and SW together. Given a HW how do you write yo
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Memory Formats for Deep Learning">
-<meta property="og:description" content="Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about. For activation, we care about:
-N: Batch C: Channel D: Depth H: Height W: Weight For weights, we care about: G: Groups O: Output channel I: Input channel D: Depth H: Height W: Weight
-Why do we care?
-It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?" />
-<meta property="og:url" content="https://66mhz.github.io/ml-dl/memory_formats_dl/" />
+<meta property="og:title" content="System Design">
+<meta property="og:description" content="System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills. It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made. Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters. It is not to memorize solutions. It is about how to solve problems." />
+<meta property="og:url" content="https://66mhz.github.io/random-tech/system_design/" />
 <meta property="og:site_name" content="Life of an engineer" />
 
   
@@ -57,7 +51,7 @@ It is mostly to optimize your HW and SW together. Given a HW how do you write yo
 <meta property="og:image:height" content="1024">
 
 
-  <meta property="article:published_time" content="2022-07-16 20:29:50 -0500 CDT" />
+  <meta property="article:published_time" content="2022-07-16 21:29:50 -0500 CDT" />
 
 
 
@@ -147,7 +141,7 @@ It is mostly to optimize your HW and SW together. Given a HW how do you write yo
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://66mhz.github.io/ml-dl/memory_formats_dl/">Memory Formats for Deep Learning</a></h1>
+    <a href="https://66mhz.github.io/random-tech/system_design/">System Design</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -166,27 +160,41 @@ It is mostly to optimize your HW and SW together. Given a HW how do you write yo
   
 
   <div class="post-content"><div>
-        <h1 id="memory-formats-for-deep-learning">Memory Formats for Deep Learning<a href="#memory-formats-for-deep-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>In deep learning, there are certain memory formats we care about.
-For activation, we care about:</p>
+        <ul>
+<li>System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills.</li>
+<li>It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made.</li>
+<li>Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters.</li>
+<li>It is not to memorize solutions. It is about how to solve problems. It is about:
 <ul>
-<li>N: Batch</li>
-<li>C: Channel</li>
-<li>D: Depth</li>
-<li>H: Height</li>
-<li>W: Weight</li>
+<li>Understand the requirements</li>
+<li>Find solutions</li>
+<li>Make decisions and discuss trade-offs.</li>
 </ul>
-<p>For weights, we care about:
-G: Groups
-O: Output channel
-I: Input channel
-D: Depth
-H: Height
-W: Weight</p>
-<p>Why do we care?</p>
-<p>It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like? Most of the time you need to know these basics.</p>
-<p>References:
-<a href="https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html">https://oneapi-src.github.io/oneDNN/understanding_memory_formats.html</a></p>
+</li>
+<li>Schedule a live-session mock interviews with senior engineers.</li>
+<li>There is a typical flow to it.
+<ul>
+<li><strong>Gather requirements.</strong> Clarify the requirements, establish baseline and assumptions made.
+<ul>
+<li>Who is this for? What are the features we need?</li>
+</ul>
+</li>
+<li>Design API
+<ul>
+<li>Do QPS if needed</li>
+</ul>
+</li>
+<li>Draw high level diagrams</li>
+<li>Schema and data structures
+<ul>
+<li>Optional storage calculation</li>
+</ul>
+</li>
+<li>End to end flow summary</li>
+<li>Maybe some deep dives</li>
+</ul>
+</li>
+</ul>
 
       </div></div>
 

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on Life of an engineer</title>
+    <link>https://66mhz.github.io/robotics/</link>
+    <description>Recent content in Robotics on Life of an engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>66mhz</copyright>
+    <lastBuildDate>Sat, 16 Jul 2022 23:23:15 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ros</title>
+      <link>https://66mhz.github.io/robotics/ros/</link>
+      <pubDate>Sat, 16 Jul 2022 23:23:15 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/robotics/ros/</guid>
+      <description>Robot Operating System / ROS Their docs has everything you need to refer, so we will just discuss ROS a bit here.
+It is one of the core knowledge and it is fundamental that there is a significant effort around it, one of the latest development, IMO, is AccelerationRobotics. I quote their webpage:
+ROBOTCORE™ helps build custom compute architectures for robots, or robot cores, that make robots faster, more deterministic and power-efficient.</description>
+      <content>&lt;h1 id=&#34;robot-operating-system--ros&#34;&gt;Robot Operating System / ROS&lt;/h1&gt;
+&lt;p&gt;Their &lt;a href=&#34;https://docs.ros.org/&#34;&gt;docs&lt;/a&gt; has everything you need to refer, so we will just discuss ROS a bit here.&lt;br&gt;
+It is one of the core knowledge and it is fundamental that there is a significant effort around it, one of the latest development, IMO, is &lt;a href=&#34;https://accelerationrobotics.com/robotcore.php#benchmarks&#34;&gt;AccelerationRobotics&lt;/a&gt;. I quote their webpage:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ROBOTCORE™ helps build custom compute architectures for robots, or robot cores, that make robots faster, more deterministic and power-efficient. Simply put, it provides a development, build and deployment experience for creating robot hardware and hardware accelerators similar to the standard, non-accelerated ROS development flow.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here is &lt;a href=&#34;https://arxiv.org/abs/2205.03929&#34;&gt;RobotCore paper&lt;/a&gt; for reference.&lt;/p&gt;
+&lt;h1 id=&#34;using-unity-with-ros&#34;&gt;Using Unity with ROS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Unity-Technologies/ROS-TCP-Endpoint&#34;&gt;ROS TCP Endpoint&lt;/a&gt;&lt;br&gt;
+&lt;em&gt;ROS package used to create an endpoint to accept ROS messages sent from a Unity scene using the ROS TCP Connector scripts&lt;/em&gt;\&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Related:&lt;/strong&gt;&lt;a href=&#34;https://github.com/Unity-Technologies/ROS-TCP-Connector&#34;&gt;ROS TCP Connector&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Unity-Technologies/Unity-Robotics-Hub&#34;&gt;Robotics simulation using Unity&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Unity-Technologies/com.unity.perception&#34;&gt;Unity perception package&lt;/a&gt;&lt;br&gt;
+&lt;em&gt;The Perception package provides a toolkit for generating large-scale datasets for computer vision training and validation. It is focused on a handful of camera-based use cases for now and will ultimately expand to other forms of sensors and machine learning tasks.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Fake Real_Self_Awareness</title>
+      <link>https://66mhz.github.io/robotics/fake-real_self_awareness/</link>
+      <pubDate>Sat, 16 Jul 2022 23:15:47 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/robotics/fake-real_self_awareness/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Agriculture and Robotics</title>
+      <link>https://66mhz.github.io/robotics/agriculture_robotics/</link>
+      <pubDate>Sat, 16 Jul 2022 22:22:50 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/robotics/agriculture_robotics/</guid>
+      <description>Survey TerraSentia (https://www.nytimes.com/2020/02/13/science/farm-agriculture-robots.html) Functions Measure plant height Stem diameter Leaf-area index Stand count (num of live grain or fruit producing plants) Dr.Chowdhary is working on this, and with its company EarthSense, which produces these robots.
+In addition to plant height, TerraSentia can measure stem diameter, leaf-area index and “stand count” — the number of live grain- or fruit-producing plants — or all of those traits at once. And Dr. Chowdhary is working on adding even more traits, or phenotypes, to the list with the help of colleagues at EarthSense, a spinoff company that he created to manufacture more robots.</description>
+      <content>&lt;h1 id=&#34;survey&#34;&gt;Survey&lt;/h1&gt;
+&lt;h2 id=&#34;terrasentia&#34;&gt;TerraSentia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(&lt;a href=&#34;https://www.nytimes.com/2020/02/13/science/farm-agriculture-robots.html&#34;&gt;https://www.nytimes.com/2020/02/13/science/farm-agriculture-robots.html&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure plant height&lt;/li&gt;
+&lt;li&gt;Stem diameter&lt;/li&gt;
+&lt;li&gt;Leaf-area index&lt;/li&gt;
+&lt;li&gt;Stand count (num of live grain or fruit producing plants)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dr.Chowdhary is working on this, and with its company EarthSense, which produces these robots.&lt;/p&gt;
+&lt;p&gt;In addition to plant height, TerraSentia can measure stem diameter, leaf-area index and “stand count” — the number of live grain- or fruit-producing plants — or all of those traits at once. And Dr. Chowdhary is working on adding even more traits, or phenotypes, to the list with the help of colleagues at EarthSense, a spinoff company that he created to manufacture more robots.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>RaspberryPi Camera v2</title>
+      <link>https://66mhz.github.io/robotics/raspberrycam/</link>
+      <pubDate>Sat, 16 Jul 2022 22:10:03 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/robotics/raspberrycam/</guid>
+      <description>Raspberry camera version 2.1 Sony IMX219 8-megapixel sensor Sensor: /base/soc/i2c0mux/i2c@1/imx219@10 It can be accessed through the MMAL and V4L APIs. If raspistill command does not work, check libcamera.
+To install v4l2-rtspserver, simply use the following command:
+sudo snap install v4l2-rtspserver
+To check the status of uv4l on raspbian:
+sudo service uv4l_raspicam status
+To start a stream:
+uv4l --driver raspicam --auto-video_nr --encoding h264 --width 640 --height 480 --enable-server on
+To find supported video capture formats:</description>
+      <content>&lt;ul&gt;
+&lt;li&gt;Raspberry camera version 2.1&lt;/li&gt;
+&lt;li&gt;Sony IMX219 8-megapixel sensor&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sensor: /base/soc/i2c0mux/i2c@1/imx219@10&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;It can be accessed through the MMAL and V4L APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If &lt;code&gt;raspistill&lt;/code&gt; command does not work, check &lt;code&gt;libcamera&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To install &lt;em&gt;v4l2-rtspserver&lt;/em&gt;, simply use the following command:&lt;br&gt;
+&lt;code&gt;sudo snap install v4l2-rtspserver&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To check the status of uv4l on raspbian:&lt;br&gt;
+&lt;code&gt;sudo service uv4l_raspicam status&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To start a stream:&lt;br&gt;
+&lt;code&gt;uv4l --driver raspicam --auto-video_nr --encoding h264 --width 640 --height 480 --enable-server on&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To find supported video capture formats:&lt;br&gt;
+&lt;code&gt;v4l2-ctl --list-formats&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To check supported and detected cameras:&lt;br&gt;
+&lt;code&gt;vcgencmd get_camera&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;How to use uv4l with a regular USB camera?&lt;br&gt;
+&lt;code&gt;uv4l --driver uvc --auto-video_nr --device-path 001:003&lt;/code&gt;
+Note &lt;code&gt;001:003&lt;/code&gt; shows the bus location for that USB camera, and we use &lt;code&gt;uvc&lt;/code&gt; for &lt;code&gt;--driver&lt;/code&gt;. This is the module for devices based on the USB video class definition.&lt;/p&gt;
+&lt;p&gt;How to initiate stream with uv4l with a regular USB camera using uvc driver?&lt;br&gt;
+&lt;code&gt;uv4l --device-path 001:003 --config-file=/etc/uv4l/uv4l-uvc.conf&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;feeding-the-stream-to-slam-and-other-algorithms---disucssion&#34;&gt;Feeding the stream to SLAM and other algorithms - Disucssion&lt;/h3&gt;
+&lt;p&gt;One of the approaches we can think of is using &lt;strong&gt;Adabins&lt;/strong&gt; and alike algorithms. These are the algorithms providing you depth information from a single image. The paper itself is quite a good read and &lt;a href=&#34;https://github.com/shariqfarooq123/AdaBins&#34;&gt;the code is here&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

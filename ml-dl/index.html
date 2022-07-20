@@ -68,7 +68,7 @@
 <body class="orange">
 
 
-<div class="container headings--one-size">
+<div class="container full headings--one-size">
 
   <header class="header">
   <div class="header__inner">
@@ -97,22 +97,14 @@
           <li><a href="/ml-dl">ML-DL</a></li>
         
       
+        
+          <li><a href="/random-tech">Random</a></li>
+        
       
-        <ul class="menu__sub-inner">
-          <li class="menu__sub-inner-more-trigger">Show more ▾</li>
-
-          <ul class="menu__sub-inner-more hidden">
-            
-              
-                <li><a href="/random-tech">Random</a></li>
-              
-            
-              
-                <li><a href="/robotics">Robotics</a></li>
-              
-            
-          </ul>
-        </ul>
+        
+          <li><a href="/robotics">Robotics</a></li>
+        
+      
       
     
 
@@ -149,6 +141,41 @@
     
   
   <div class="posts">
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="https://66mhz.github.io/ml-dl/rocm/">ROCm</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2022-07-16
+          </span>
+          
+        </div>
+
+        
+
+        
+
+
+      
+        <div class="post-content">
+          
+            For anyone using ROCm for machine learnig / deep learning, these docker run commands will be useful:
+For Pytorch:
+sudo docker run -it &ndash;name rocm_torch &ndash;network=host &ndash;device=/dev/kfd &ndash;device=/dev/dri &ndash;group-add=video &ndash;ipc=host &ndash;cap-add=SYS_PTRACE &ndash;security-opt seccomp=unconfined -v ~/things/:/atdocker -v /mnt/1tb:/1tb rocm/pytorch
+Note rocm/pytorch is the latest release, check docker hub for different ubuntu versions and so on.
+ROCm with Tensorflow has the similar idea, just use rocm/tensorflow.
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/ml-dl/rocm/">Read more →</a>
+        </div>
+        
+      </div>
     
       <div class="post on-list">
         <h1 class="post-title">
@@ -215,37 +242,6 @@ It can reconstruct full 3D geometry, meaning, even the unseen regions.
         <div>
           <a class="read-more button"
             href="/ml-dl/phorhum/">Read more →</a>
-        </div>
-        
-      </div>
-    
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="https://66mhz.github.io/ml-dl/about/"></a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-date">
-            0001-01-01
-          </span>
-          
-        </div>
-
-        
-
-        
-
-
-      
-        <div class="post-content">
-          
-            this is a test for ml-dl
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/ml-dl/about/">Read more →</a>
         </div>
         
       </div>

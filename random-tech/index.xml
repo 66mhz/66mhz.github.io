@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>66mhz</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 20:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/random-tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 21:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/random-tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System Design</title>
+      <link>https://66mhz.github.io/random-tech/system_design/</link>
+      <pubDate>Sat, 16 Jul 2022 21:29:50 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/random-tech/system_design/</guid>
+      <description>System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills. It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made. Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters. It is not to memorize solutions. It is about how to solve problems.</description>
+      <content>&lt;ul&gt;
+&lt;li&gt;System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills.&lt;/li&gt;
+&lt;li&gt;It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made.&lt;/li&gt;
+&lt;li&gt;Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters.&lt;/li&gt;
+&lt;li&gt;It is not to memorize solutions. It is about how to solve problems. It is about:
+&lt;ul&gt;
+&lt;li&gt;Understand the requirements&lt;/li&gt;
+&lt;li&gt;Find solutions&lt;/li&gt;
+&lt;li&gt;Make decisions and discuss trade-offs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Schedule a live-session mock interviews with senior engineers.&lt;/li&gt;
+&lt;li&gt;There is a typical flow to it.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gather requirements.&lt;/strong&gt; Clarify the requirements, establish baseline and assumptions made.
+&lt;ul&gt;
+&lt;li&gt;Who is this for? What are the features we need?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Design API
+&lt;ul&gt;
+&lt;li&gt;Do QPS if needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Draw high level diagrams&lt;/li&gt;
+&lt;li&gt;Schema and data structures
+&lt;ul&gt;
+&lt;li&gt;Optional storage calculation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;End to end flow summary&lt;/li&gt;
+&lt;li&gt;Maybe some deep dives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>BLE5</title>
       <link>https://66mhz.github.io/random-tech/ble5/</link>
