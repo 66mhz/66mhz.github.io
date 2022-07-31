@@ -7,9 +7,109 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>66mhz</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 23:23:15 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 01:22:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ros</title>
+      <title>SLAM</title>
+      <link>https://66mhz.github.io/robotics/slam/</link>
+      <pubDate>Sun, 31 Jul 2022 01:22:50 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/robotics/slam/</guid>
+      <description>SLAM (Simultaneous Localization and Mapping) In robotics, planning a path is a predictive control method that requires estimation of the structure of environment, to plot a course to a target. SLAM, simultaneous localization and mapping, is the most commonly used method.
+SLAM is usually done with a suite of sensors, such as RGB-D (depth) cameras, stereo depth cameras, LIDAR or monocular cameras.
+An interesting example is the Skydio R15 drone. It is a quadrotor drone released in 2018, which uses SLAM to build a local map of the environment.</description>
+      <content>&lt;h1 id=&#34;slam-simultaneous-localization-and-mapping&#34;&gt;SLAM (Simultaneous Localization and Mapping)&lt;/h1&gt;
+&lt;p&gt;In robotics, planning a path is a predictive control method that requires estimation of the structure of environment, to plot a course to a target. SLAM, simultaneous localization and mapping, is the most commonly used method.&lt;/p&gt;
+&lt;p&gt;SLAM is usually done with a suite of sensors, such as RGB-D (depth) cameras, stereo depth cameras, LIDAR or monocular cameras.&lt;/p&gt;
+&lt;p&gt;An interesting example is the Skydio R15 drone. It is a quadrotor drone released in 2018, which uses SLAM to build a local map of the environment. It is done using 13 cameras, placed to see the whole environment. It uses deep learning and detects the person who it is set to follow and builds a path through the environment in order to follow the person while avoiding obstacles around it.&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;p&gt;There are some good resources for robot mapping, one of them is &lt;a href=&#34;http://ais.informatik.uni-freiburg.de/teaching/ws18/mapping/&#34;&gt;Robot Mapping&lt;/a&gt; course by Wolfram Burgard. Burgard is a professor at the University of Freiburg and head of the research lab for &lt;a href=&#34;http://ais.informatik.uni-freiburg.de/&#34;&gt;Autonomous Intelligent Systems&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The basis of mapping is visual odometry and there are a few good resources for VO:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[Tutorial on Visual Odometry](Tutorial on Visual Odometry), by Davide Scaramuzza&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rpg.ifi.uzh.ch/teaching.html&#34;&gt;Vision Algorithms for Mobile Robotics&lt;/a&gt;, ETHZ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;—&amp;gt; A good resource for all books, references, and research is provided &lt;a href=&#34;https://github.com/kanster/awesome-slam&#34;&gt;here&lt;/a&gt;, I would recommend taking a look at it.&lt;/p&gt;
+&lt;p&gt;—&amp;gt; Another list, rather a practical one (which I prefer) is given &lt;a href=&#34;https://github.com/tzutalin/awesome-visual-slam&#34;&gt;here&lt;/a&gt;, please take a look.&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;p&gt;For software, it is better to stick with (at least at the beginning) well-known libraries. If you are using ROS (Robot Operating System), utilize &lt;a href=&#34;http://wiki.ros.org/rtabmap_ros&#34;&gt;rtabmap_ros&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This package is a ROS wrapper of RTAB-Map (Real-Time Appearance-Based Mapping), a RGB-D SLAM approach based on a global loop closure detector with real-time constraints. This package can be used to generate a 3D point clouds of the environment and/or to create a 2D occupancy grid map for navigation. The tutorials and demos show some examples of mapping with RTAB-Map.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;photogrammetry&#34;&gt;Photogrammetry&lt;/h1&gt;
+&lt;h2 id=&#34;learn-1&#34;&gt;Learn&lt;/h2&gt;
+&lt;p&gt;Photogrammetry is “the art and science of extracting 3D information from photographs”. There are many techniques to extract such information.&lt;/p&gt;
+&lt;p&gt;One way to do this is, by extracting 3D measurements from 2D. The distance between two points that lie on a plane parallel to the photographic image plane can be determined by measuring their distance on the image, as long as the scale of the image is known. [Projective geometry] (&lt;a href=&#34;https://en.wikipedia.org/wiki/Projective_geometry&#34;&gt;https://en.wikipedia.org/wiki/Projective_geometry&lt;/a&gt;) is the main discipline working on such problems.&lt;/p&gt;
+&lt;p&gt;A special case of photogrammetry is stereo-photogrammetry. As stereo implies, there are two pictures taken from different angles, using triangulation it is possible to identify the location of the object.&lt;/p&gt;
+&lt;p&gt;Photogrammetric data can also be complemented with LIDAR, laser scanners, or any device that returns point clouds. (For those who don’t know what point cloud is, it is a set of data points in space. Wikipedia has &lt;a href=&#34;https://upload.wikimedia.org/wikipedia/commons/4/4c/Point_cloud_torus.gif&#34;&gt;a good visual&lt;/a&gt; for it)&lt;/p&gt;
+&lt;h3 id=&#34;image-depth-estimation-using-deep-learning&#34;&gt;Image depth estimation using deep learning&lt;/h3&gt;
+&lt;p&gt;3D point clouds can also be generated from computer vision algorithms such as triangulation, bundle adjustment, and more recently, monocular image depth estimation using deep learning.&lt;/p&gt;
+&lt;p&gt;There are many examples of how to use deep learning to estimate depth from a single image. Here is &lt;a href=&#34;https://openaccess.thecvf.com/content_ICCV_2019/papers/van_Dijk_How_Do_Neural_Networks_See_Depth_in_Single_Images_ICCV_2019_paper.pdf&#34;&gt;one reference&lt;/a&gt;, which explains the theory well, and also discusses what the models learn.
+One of the latest works is &lt;a href=&#34;https://3dvar.com/Bhat2021AdaBins.pdf&#34;&gt;Adabins&lt;/a&gt;. I had a chance to try their implementation and quite frankly it is impressive.
+This is a hot research area. Another work from DeepAI is called &lt;a href=&#34;https://deepai.org/publication/localbins-improving-depth-estimation-by-learning-local-distributions&#34;&gt;LocalBins&lt;/a&gt;, which is compared to Adabins. There is a scoreboard list for such algorithms somewhere, &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;The question is how we can use such algorithms in actual robotics implementations and integrate this into a SLAM system. I think that’s something to survey and think about.&lt;/p&gt;
+&lt;h3 id=&#34;how-do-neural-networks-see-depth-in-single-images&#34;&gt;How Do Neural Networks See Depth in Single Images?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stereo vision allows absolute depth to be estimated using multiple cameras. When only a single camera can be used, optical flow can provide a measure of depth; or if images can be combined over longer time spans then SLAM or Structure-from-Motion can be used to estimate the geometry of the scene.  These methods tend to treat depth estimation as a purely geometrical problem, ignoring the content of the images. These methods tend to treat depth estimation as a purely geometrical problem, ignoring the content of the images. \n Methods have been developed that use monocular image sequences to learn single-frame depth estimation in an unsupervised manner, of which the works by Zhou et al. [25] and Wang et al. [23] are examples. Recent work focuses primarily on the accuracy of monocular depth estimation, where evaluations on publicly available datasets such as KITTI [15] and NYUv2 [20] show that neural networks can indeed generate accurate depth maps from single images.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;code-1&#34;&gt;Code&lt;/h2&gt;
+&lt;p&gt;Wikipedia has a good list of comparisons of software, but I have yet to try them.&lt;/p&gt;
+&lt;p&gt;If you like drones or work on them, one noticeable software is &lt;a href=&#34;https://www.opendronemap.org/&#34;&gt;OpenDroneMap&lt;/a&gt;. The software has a lot of libraries, which I hope to look into, try and update here soon. TODO.&lt;/p&gt;
+&lt;p&gt;Looking for a dataset of point clouds? Here is one —&amp;gt; &lt;a href=&#34;https://pointclouds.org/&#34;&gt;pointclouds.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PyTorch3D also has functions to render point clouds. One of the tutorials is &lt;a href=&#34;https://pytorch3d.org/tutorials/render_colored_points&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://openresearch-repository.anu.edu.au/bitstream/1885/227241/1/Jean-Luc%20Stevens%20MPhil%20Thesis.pdf&#34;&gt;https://openresearch-repository.anu.edu.au/bitstream/1885/227241/1/Jean-Luc%20Stevens%20MPhil%20Thesis.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ais.informatik.uni-freiburg.de/teaching/ws18/mapping/&#34;&gt;http://ais.informatik.uni-freiburg.de/teaching/ws18/mapping/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.ros.org/rtabmap_ros&#34;&gt;http://wiki.ros.org/rtabmap_ros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kanster/awesome-slam&#34;&gt;https://github.com/kanster/awesome-slam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tzutalin/awesome-visual-slam&#34;&gt;https://github.com/tzutalin/awesome-visual-slam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Photogrammetry&#34;&gt;https://en.wikipedia.org/wiki/Photogrammetry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pytorch3d.org/tutorials/render_colored_points&#34;&gt;https://pytorch3d.org/tutorials/render_colored_points&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Knowing Red</title>
+      <link>https://66mhz.github.io/random-tech/red/</link>
+      <pubDate>Sun, 31 Jul 2022 00:29:50 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/random-tech/red/</guid>
+      <description>Knowing Red But Not Feeling It [&amp;hellip;] Mary, a colorblind lady, volunteered for an experiment where she was shown the required amount of light to create a red color in her brain. After being shown the light, she affirmed the red color through her description to the neuroscientist in charge. As interesting as the color breakthrough is, it does not fully capture the essence of knowing it. Even though her brain has registered the red color, her mind is yet to do so.</description>
+      <content>&lt;h1 id=&#34;knowing-red-but-not-feeling-it&#34;&gt;Knowing Red But Not Feeling It&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[&amp;hellip;] Mary, a colorblind lady, volunteered for an experiment where she was shown the required amount of light to create a red color in her brain. After being shown the light, she affirmed the red color through her description to the neuroscientist in charge. As interesting as the color breakthrough is, it does not fully capture the essence of knowing it. Even though her brain has registered the red color, her mind is yet to do so. She knows what red looks like, but she does not know what red feels like.[&amp;hellip;]&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>TTS Models</title>
+      <link>https://66mhz.github.io/ml-dl/texttospeech/</link>
+      <pubDate>Wed, 27 Jul 2022 20:29:50 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/ml-dl/texttospeech/</guid>
+      <description>Text-to-Speech(TTS) Models The ones that are worthy trying:
+Larynx It is simple, not the greatest out-of-box, but will work on low-perf devices. Coqui https://github.com/66mhz/TTS </description>
+      <content>&lt;h1 id=&#34;text-to-speechtts-models&#34;&gt;Text-to-Speech(TTS) Models&lt;/h1&gt;
+&lt;p&gt;The ones that are worthy trying:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/66mhz/larynx#basic-synthesis&#34;&gt;Larynx&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;It is simple, not the greatest out-of-box, but will work on low-perf devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Coqui
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/66mhz/TTS&#34;&gt;https://github.com/66mhz/TTS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>ROS (Robot Operating System)</title>
       <link>https://66mhz.github.io/robotics/ros/</link>
       <pubDate>Sat, 16 Jul 2022 23:23:15 -0500</pubDate>
       
@@ -140,51 +240,6 @@ Note &lt;code&gt;001:003&lt;/code&gt; shows the bus location for that USB camera
     </item>
     
     <item>
-      <title>System Design</title>
-      <link>https://66mhz.github.io/random-tech/system_design/</link>
-      <pubDate>Sat, 16 Jul 2022 21:29:50 -0500</pubDate>
-      
-      <guid>https://66mhz.github.io/random-tech/system_design/</guid>
-      <description>System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills. It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made. Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters. It is not to memorize solutions. It is about how to solve problems.</description>
-      <content>&lt;ul&gt;
-&lt;li&gt;System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills.&lt;/li&gt;
-&lt;li&gt;It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made.&lt;/li&gt;
-&lt;li&gt;Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters.&lt;/li&gt;
-&lt;li&gt;It is not to memorize solutions. It is about how to solve problems. It is about:
-&lt;ul&gt;
-&lt;li&gt;Understand the requirements&lt;/li&gt;
-&lt;li&gt;Find solutions&lt;/li&gt;
-&lt;li&gt;Make decisions and discuss trade-offs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Schedule a live-session mock interviews with senior engineers.&lt;/li&gt;
-&lt;li&gt;There is a typical flow to it.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Gather requirements.&lt;/strong&gt; Clarify the requirements, establish baseline and assumptions made.
-&lt;ul&gt;
-&lt;li&gt;Who is this for? What are the features we need?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Design API
-&lt;ul&gt;
-&lt;li&gt;Do QPS if needed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Draw high level diagrams&lt;/li&gt;
-&lt;li&gt;Schema and data structures
-&lt;ul&gt;
-&lt;li&gt;Optional storage calculation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;End to end flow summary&lt;/li&gt;
-&lt;li&gt;Maybe some deep dives&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </item>
-    
-    <item>
       <title>MAIN</title>
       <link>https://66mhz.github.io/posts/main/</link>
       <pubDate>Sat, 16 Jul 2022 20:59:50 -0500</pubDate>
@@ -292,7 +347,7 @@ W: Weight&lt;/p&gt;
     <item>
       <title>PHORHUM</title>
       <link>https://66mhz.github.io/ml-dl/phorhum/</link>
-      <pubDate>Sat, 16 Jul 2022 20:29:50 -0500</pubDate>
+      <pubDate>Mon, 11 Jul 2022 20:29:50 -0500</pubDate>
       
       <guid>https://66mhz.github.io/ml-dl/phorhum/</guid>
       <description>A new work from Google Research, published here.

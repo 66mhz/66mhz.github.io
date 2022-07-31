@@ -7,7 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>66mhz</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 23:18:54 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/ml-dl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 20:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/ml-dl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TTS Models</title>
+      <link>https://66mhz.github.io/ml-dl/texttospeech/</link>
+      <pubDate>Wed, 27 Jul 2022 20:29:50 -0500</pubDate>
+      
+      <guid>https://66mhz.github.io/ml-dl/texttospeech/</guid>
+      <description>Text-to-Speech(TTS) Models The ones that are worthy trying:
+Larynx It is simple, not the greatest out-of-box, but will work on low-perf devices. Coqui https://github.com/66mhz/TTS </description>
+      <content>&lt;h1 id=&#34;text-to-speechtts-models&#34;&gt;Text-to-Speech(TTS) Models&lt;/h1&gt;
+&lt;p&gt;The ones that are worthy trying:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/66mhz/larynx#basic-synthesis&#34;&gt;Larynx&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;It is simple, not the greatest out-of-box, but will work on low-perf devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Coqui
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/66mhz/TTS&#34;&gt;https://github.com/66mhz/TTS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>ROCm</title>
       <link>https://66mhz.github.io/ml-dl/rocm/</link>
@@ -64,7 +89,7 @@ W: Weight&lt;/p&gt;
     <item>
       <title>PHORHUM</title>
       <link>https://66mhz.github.io/ml-dl/phorhum/</link>
-      <pubDate>Sat, 16 Jul 2022 20:29:50 -0500</pubDate>
+      <pubDate>Mon, 11 Jul 2022 20:29:50 -0500</pubDate>
       
       <guid>https://66mhz.github.io/ml-dl/phorhum/</guid>
       <description>A new work from Google Research, published here.

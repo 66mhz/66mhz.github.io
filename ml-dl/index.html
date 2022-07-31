@@ -144,6 +144,24 @@
     
       <div class="post on-list">
         <h1 class="post-title">
+          <a href="https://66mhz.github.io/ml-dl/texttospeech/">TTS Models</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2022-07-27
+          </span>
+          
+        </div>
+
+        
+
+        
+
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
           <a href="https://66mhz.github.io/ml-dl/rocm/">ROCm</a>
         </h1>
         <div class="post-meta">
@@ -157,23 +175,6 @@
 
         
 
-
-      
-        <div class="post-content">
-          
-            For anyone using ROCm for machine learnig / deep learning, these docker run commands will be useful:
-For Pytorch:
-sudo docker run -it &ndash;name rocm_torch &ndash;network=host &ndash;device=/dev/kfd &ndash;device=/dev/dri &ndash;group-add=video &ndash;ipc=host &ndash;cap-add=SYS_PTRACE &ndash;security-opt seccomp=unconfined -v ~/things/:/atdocker -v /mnt/1tb:/1tb rocm/pytorch
-Note rocm/pytorch is the latest release, check docker hub for different ubuntu versions and so on.
-ROCm with Tensorflow has the similar idea, just use rocm/tensorflow.
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/ml-dl/rocm/">Read more →</a>
-        </div>
         
       </div>
     
@@ -192,22 +193,6 @@ ROCm with Tensorflow has the similar idea, just use rocm/tensorflow.
 
         
 
-
-      
-        <div class="post-content">
-          
-            Memory Formats for Deep Learning In deep learning, there are certain memory formats we care about. For activation, we care about:
-N: Batch C: Channel D: Depth H: Height W: Weight For weights, we care about: G: Groups O: Output channel I: Input channel D: Depth H: Height W: Weight
-Why do we care?
-It is mostly to optimize your HW and SW together. Given a HW how do you write your SW, or given SW requirements how a HW design should look like?
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/ml-dl/memory_formats_dl/">Read more →</a>
-        </div>
         
       </div>
     
@@ -217,7 +202,7 @@ It is mostly to optimize your HW and SW together. Given a HW how do you write yo
         </h1>
         <div class="post-meta">
           <span class="post-date">
-            2022-07-16
+            2022-07-11
           </span>
           
         </div>
@@ -226,23 +211,6 @@ It is mostly to optimize your HW and SW together. Given a HW how do you write yo
 
         
 
-
-      
-        <div class="post-content">
-          
-            A new work from Google Research, published here.
-Photorealistic Monocular 3D Reconstruction of Humans Wearing Clothing. Where is the model? Where is the dataset? We would like to try Google!
-If you happen to know the source code or dataset for this work, please share :)
-In essence, a DL network that performs photorealistic 3D person reconstruction from a single RGB image.
-It can reconstruct full 3D geometry, meaning, even the unseen regions.
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/ml-dl/phorhum/">Read more →</a>
-        </div>
         
       </div>
     

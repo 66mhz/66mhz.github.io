@@ -3,16 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://66mhz.github.io/</loc>
-    <lastmod>2022-07-16T23:23:15-05:00</lastmod>
+    <lastmod>2022-07-31T01:22:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/robotics/</loc>
-    <lastmod>2022-07-16T23:23:15-05:00</lastmod>
+    <lastmod>2022-07-31T01:22:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/robotics/slam/</loc>
+    <lastmod>2022-07-31T01:22:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/random-tech/red/</loc>
+    <lastmod>2022-07-31T00:29:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/random-tech/</loc>
+    <lastmod>2022-07-31T00:29:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/ml-dl/</loc>
+    <lastmod>2022-07-27T20:29:50-05:00</lastmod>
+  </url><url>
+    <loc>https://66mhz.github.io/ml-dl/texttospeech/</loc>
+    <lastmod>2022-07-27T20:29:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/robotics/ros/</loc>
     <lastmod>2022-07-16T23:23:15-05:00</lastmod>
-  </url><url>
-    <loc>https://66mhz.github.io/ml-dl/</loc>
-    <lastmod>2022-07-16T23:18:54-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/ml-dl/rocm/</loc>
     <lastmod>2022-07-16T23:18:54-05:00</lastmod>
@@ -25,12 +37,6 @@
   </url><url>
     <loc>https://66mhz.github.io/robotics/raspberrycam/</loc>
     <lastmod>2022-07-16T22:10:03-05:00</lastmod>
-  </url><url>
-    <loc>https://66mhz.github.io/random-tech/</loc>
-    <lastmod>2022-07-16T21:29:50-05:00</lastmod>
-  </url><url>
-    <loc>https://66mhz.github.io/random-tech/system_design/</loc>
-    <lastmod>2022-07-16T21:29:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/posts/main/</loc>
     <lastmod>2022-07-16T20:59:50-05:00</lastmod>
@@ -45,7 +51,7 @@
     <lastmod>2022-07-16T20:29:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/ml-dl/phorhum/</loc>
-    <lastmod>2022-07-16T20:29:50-05:00</lastmod>
+    <lastmod>2022-07-11T20:29:50-05:00</lastmod>
   </url><url>
     <loc>https://66mhz.github.io/about/about/</loc>
   </url><url>

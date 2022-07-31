@@ -7,49 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>66mhz</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 21:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/random-tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 00:29:50 -0500</lastBuildDate><atom:link href="https://66mhz.github.io/random-tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>System Design</title>
-      <link>https://66mhz.github.io/random-tech/system_design/</link>
-      <pubDate>Sat, 16 Jul 2022 21:29:50 -0500</pubDate>
+      <title>Knowing Red</title>
+      <link>https://66mhz.github.io/random-tech/red/</link>
+      <pubDate>Sun, 31 Jul 2022 00:29:50 -0500</pubDate>
       
-      <guid>https://66mhz.github.io/random-tech/system_design/</guid>
-      <description>System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills. It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made. Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters. It is not to memorize solutions. It is about how to solve problems.</description>
-      <content>&lt;ul&gt;
-&lt;li&gt;System design is about understanding the fundementals of building blocks, and piecing them together using problem-solving skills.&lt;/li&gt;
-&lt;li&gt;It is about showing leadership skills, showing initiativeness and discussing the trade-offs, as there is often a trade-off once a decision is made.&lt;/li&gt;
-&lt;li&gt;Rather than the solution, how you approach to a problem, to show problem-solving skills is what matters.&lt;/li&gt;
-&lt;li&gt;It is not to memorize solutions. It is about how to solve problems. It is about:
-&lt;ul&gt;
-&lt;li&gt;Understand the requirements&lt;/li&gt;
-&lt;li&gt;Find solutions&lt;/li&gt;
-&lt;li&gt;Make decisions and discuss trade-offs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Schedule a live-session mock interviews with senior engineers.&lt;/li&gt;
-&lt;li&gt;There is a typical flow to it.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Gather requirements.&lt;/strong&gt; Clarify the requirements, establish baseline and assumptions made.
-&lt;ul&gt;
-&lt;li&gt;Who is this for? What are the features we need?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Design API
-&lt;ul&gt;
-&lt;li&gt;Do QPS if needed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Draw high level diagrams&lt;/li&gt;
-&lt;li&gt;Schema and data structures
-&lt;ul&gt;
-&lt;li&gt;Optional storage calculation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;End to end flow summary&lt;/li&gt;
-&lt;li&gt;Maybe some deep dives&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+      <guid>https://66mhz.github.io/random-tech/red/</guid>
+      <description>Knowing Red But Not Feeling It [&amp;hellip;] Mary, a colorblind lady, volunteered for an experiment where she was shown the required amount of light to create a red color in her brain. After being shown the light, she affirmed the red color through her description to the neuroscientist in charge. As interesting as the color breakthrough is, it does not fully capture the essence of knowing it. Even though her brain has registered the red color, her mind is yet to do so.</description>
+      <content>&lt;h1 id=&#34;knowing-red-but-not-feeling-it&#34;&gt;Knowing Red But Not Feeling It&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[&amp;hellip;] Mary, a colorblind lady, volunteered for an experiment where she was shown the required amount of light to create a red color in her brain. After being shown the light, she affirmed the red color through her description to the neuroscientist in charge. As interesting as the color breakthrough is, it does not fully capture the essence of knowing it. Even though her brain has registered the red color, her mind is yet to do so. She knows what red looks like, but she does not know what red feels like.[&amp;hellip;]&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     </item>
     

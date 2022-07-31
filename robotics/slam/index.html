@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>SLAM :: Life of an engineer</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SLAM (Simultaneous Localization and Mapping) In robotics, planning a path is a predictive control method that requires estimation of the structure of environment, to plot a course to a target. SLAM, simultaneous localization and mapping, is the most commonly used method.
+SLAM is usually done with a suite of sensors, such as RGB-D (depth) cameras, stereo depth cameras, LIDAR or monocular cameras.
+An interesting example is the Skydio R15 drone. It is a quadrotor drone released in 2018, which uses SLAM to build a local map of the environment." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://66mhz.github.io/robotics/slam/" />
+
+
+
+
+<link rel="stylesheet" href="https://66mhz.github.io/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://66mhz.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://66mhz.github.io/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="SLAM">
+<meta property="og:description" content="SLAM (Simultaneous Localization and Mapping) In robotics, planning a path is a predictive control method that requires estimation of the structure of environment, to plot a course to a target. SLAM, simultaneous localization and mapping, is the most commonly used method.
+SLAM is usually done with a suite of sensors, such as RGB-D (depth) cameras, stereo depth cameras, LIDAR or monocular cameras.
+An interesting example is the Skydio R15 drone. It is a quadrotor drone released in 2018, which uses SLAM to build a local map of the environment." />
+<meta property="og:url" content="https://66mhz.github.io/robotics/slam/" />
+<meta property="og:site_name" content="Life of an engineer" />
+
+  
+    <meta property="og:image" content="https://66mhz.github.io/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2022-07-31 01:22:50 -0500 CDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/computer_architecture">Computer Architecture</a></li>
+        
+      
+        
+          <li><a href="/ml-dl">ML-DL</a></li>
+        
+      
+        
+          <li><a href="/random-tech">Random</a></li>
+        
+      
+        
+          <li><a href="/robotics">Robotics</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/computer_architecture">Computer Architecture</a></li>
+      
+    
+      
+        <li><a href="/ml-dl">ML-DL</a></li>
+      
+    
+      
+        <li><a href="/random-tech">Random</a></li>
+      
+    
+      
+        <li><a href="/robotics">Robotics</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://66mhz.github.io/robotics/slam/">SLAM</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-07-31
+        
+      </span>
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="slam-simultaneous-localization-and-mapping">SLAM (Simultaneous Localization and Mapping)<a href="#slam-simultaneous-localization-and-mapping" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>In robotics, planning a path is a predictive control method that requires estimation of the structure of environment, to plot a course to a target. SLAM, simultaneous localization and mapping, is the most commonly used method.</p>
+<p>SLAM is usually done with a suite of sensors, such as RGB-D (depth) cameras, stereo depth cameras, LIDAR or monocular cameras.</p>
+<p>An interesting example is the Skydio R15 drone. It is a quadrotor drone released in 2018, which uses SLAM to build a local map of the environment. It is done using 13 cameras, placed to see the whole environment. It uses deep learning and detects the person who it is set to follow and builds a path through the environment in order to follow the person while avoiding obstacles around it.</p>
+<h2 id="learn">Learn<a href="#learn" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>There are some good resources for robot mapping, one of them is <a href="http://ais.informatik.uni-freiburg.de/teaching/ws18/mapping/">Robot Mapping</a> course by Wolfram Burgard. Burgard is a professor at the University of Freiburg and head of the research lab for <a href="http://ais.informatik.uni-freiburg.de/">Autonomous Intelligent Systems</a>.</p>
+<p>The basis of mapping is visual odometry and there are a few good resources for VO:</p>
+<ul>
+<li>[Tutorial on Visual Odometry](Tutorial on Visual Odometry), by Davide Scaramuzza</li>
+<li><a href="http://rpg.ifi.uzh.ch/teaching.html">Vision Algorithms for Mobile Robotics</a>, ETHZ</li>
+</ul>
+<p>—&gt; A good resource for all books, references, and research is provided <a href="https://github.com/kanster/awesome-slam">here</a>, I would recommend taking a look at it.</p>
+<p>—&gt; Another list, rather a practical one (which I prefer) is given <a href="https://github.com/tzutalin/awesome-visual-slam">here</a>, please take a look.</p>
+<h2 id="code">Code<a href="#code" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>For software, it is better to stick with (at least at the beginning) well-known libraries. If you are using ROS (Robot Operating System), utilize <a href="http://wiki.ros.org/rtabmap_ros">rtabmap_ros</a>:</p>
+<blockquote>
+<p>This package is a ROS wrapper of RTAB-Map (Real-Time Appearance-Based Mapping), a RGB-D SLAM approach based on a global loop closure detector with real-time constraints. This package can be used to generate a 3D point clouds of the environment and/or to create a 2D occupancy grid map for navigation. The tutorials and demos show some examples of mapping with RTAB-Map.</p>
+</blockquote>
+<h1 id="photogrammetry">Photogrammetry<a href="#photogrammetry" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="learn-1">Learn<a href="#learn-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Photogrammetry is “the art and science of extracting 3D information from photographs”. There are many techniques to extract such information.</p>
+<p>One way to do this is, by extracting 3D measurements from 2D. The distance between two points that lie on a plane parallel to the photographic image plane can be determined by measuring their distance on the image, as long as the scale of the image is known. [Projective geometry] (<a href="https://en.wikipedia.org/wiki/Projective_geometry">https://en.wikipedia.org/wiki/Projective_geometry</a>) is the main discipline working on such problems.</p>
+<p>A special case of photogrammetry is stereo-photogrammetry. As stereo implies, there are two pictures taken from different angles, using triangulation it is possible to identify the location of the object.</p>
+<p>Photogrammetric data can also be complemented with LIDAR, laser scanners, or any device that returns point clouds. (For those who don’t know what point cloud is, it is a set of data points in space. Wikipedia has <a href="https://upload.wikimedia.org/wikipedia/commons/4/4c/Point_cloud_torus.gif">a good visual</a> for it)</p>
+<h3 id="image-depth-estimation-using-deep-learning">Image depth estimation using deep learning<a href="#image-depth-estimation-using-deep-learning" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>3D point clouds can also be generated from computer vision algorithms such as triangulation, bundle adjustment, and more recently, monocular image depth estimation using deep learning.</p>
+<p>There are many examples of how to use deep learning to estimate depth from a single image. Here is <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/van_Dijk_How_Do_Neural_Networks_See_Depth_in_Single_Images_ICCV_2019_paper.pdf">one reference</a>, which explains the theory well, and also discusses what the models learn.
+One of the latest works is <a href="https://3dvar.com/Bhat2021AdaBins.pdf">Adabins</a>. I had a chance to try their implementation and quite frankly it is impressive.
+This is a hot research area. Another work from DeepAI is called <a href="https://deepai.org/publication/localbins-improving-depth-estimation-by-learning-local-distributions">LocalBins</a>, which is compared to Adabins. There is a scoreboard list for such algorithms somewhere, <!-- raw HTML omitted --></p>
+<p>The question is how we can use such algorithms in actual robotics implementations and integrate this into a SLAM system. I think that’s something to survey and think about.</p>
+<h3 id="how-do-neural-networks-see-depth-in-single-images">How Do Neural Networks See Depth in Single Images?<a href="#how-do-neural-networks-see-depth-in-single-images" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<blockquote>
+<p>Stereo vision allows absolute depth to be estimated using multiple cameras. When only a single camera can be used, optical flow can provide a measure of depth; or if images can be combined over longer time spans then SLAM or Structure-from-Motion can be used to estimate the geometry of the scene.  These methods tend to treat depth estimation as a purely geometrical problem, ignoring the content of the images. These methods tend to treat depth estimation as a purely geometrical problem, ignoring the content of the images. \n Methods have been developed that use monocular image sequences to learn single-frame depth estimation in an unsupervised manner, of which the works by Zhou et al. [25] and Wang et al. [23] are examples. Recent work focuses primarily on the accuracy of monocular depth estimation, where evaluations on publicly available datasets such as KITTI [15] and NYUv2 [20] show that neural networks can indeed generate accurate depth maps from single images.</p>
+</blockquote>
+<h2 id="code-1">Code<a href="#code-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Wikipedia has a good list of comparisons of software, but I have yet to try them.</p>
+<p>If you like drones or work on them, one noticeable software is <a href="https://www.opendronemap.org/">OpenDroneMap</a>. The software has a lot of libraries, which I hope to look into, try and update here soon. TODO.</p>
+<p>Looking for a dataset of point clouds? Here is one —&gt; <a href="https://pointclouds.org/">pointclouds.org</a>.</p>
+<p>PyTorch3D also has functions to render point clouds. One of the tutorials is <a href="https://pytorch3d.org/tutorials/render_colored_points">here</a>.</p>
+<h1 id="references">References<a href="#references" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<ol>
+<li><a href="https://openresearch-repository.anu.edu.au/bitstream/1885/227241/1/Jean-Luc%20Stevens%20MPhil%20Thesis.pdf">https://openresearch-repository.anu.edu.au/bitstream/1885/227241/1/Jean-Luc%20Stevens%20MPhil%20Thesis.pdf</a></li>
+<li><a href="http://ais.informatik.uni-freiburg.de/teaching/ws18/mapping/">http://ais.informatik.uni-freiburg.de/teaching/ws18/mapping/</a></li>
+<li><a href="http://wiki.ros.org/rtabmap_ros">http://wiki.ros.org/rtabmap_ros</a></li>
+<li><a href="https://github.com/kanster/awesome-slam">https://github.com/kanster/awesome-slam</a></li>
+<li><a href="https://github.com/tzutalin/awesome-visual-slam">https://github.com/tzutalin/awesome-visual-slam</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Photogrammetry">https://en.wikipedia.org/wiki/Photogrammetry</a></li>
+<li><a href="https://pytorch3d.org/tutorials/render_colored_points">https://pytorch3d.org/tutorials/render_colored_points</a></li>
+</ol>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>66mhz</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://66mhz.github.io/assets/main.js"></script>
+<script src="https://66mhz.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
